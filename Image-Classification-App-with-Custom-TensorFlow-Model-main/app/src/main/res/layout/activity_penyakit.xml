@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Penyakit">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="700sp"
+                 android:layout_height="380sp"
+                 android:src="@drawable/leaf"
+                 android:paddingBottom="70sp"/>
+
+            <TextView
+                android:id="@+id/jdul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:text="LeafScorch"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="-48sp"/>
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jdul"
+                android:textColor="@color/pink"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:text="Diplocarpon earliana"
+                android:layout_centerHorizontal="true"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pen_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjelasan"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaf scorch disebabkan oleh jamur Diplocarpon earlianum. Jamur ini juga menyebar di lingkungan yang lembab dan menyebabkan kerusakan yang lebih parah dibandingkan leaf spot. Spora dari Diplocarpon earlianum menyebar melalui air hujan atau irigasi, serta angin, dan dapat menginfeksi seluruh tanaman dengan cepat"
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pen_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp"
+                android:id="@+id/gejala">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanda-tanda Penyakit"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaf scorch diawali dengan bintik-bintik yang mirip dengan leaf spot, tetapi gejalanya berkembang lebih cepat. Bintik-bintik ini membesar menjadi area nekrosis yang luas. Daun yang terinfeksi sering kali tampak terbakar, dengan nekrosis yang meluas ke seluruh daun, yang akhirnya menyebabkan daun menjadi coklat dan mati."
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gejala"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp"
+                android:id="@+id/solusi">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penanganan dan Pencegahan"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Fungisida Spesifik: Penggunaan fungisida yang\n  efektif terhadap Diplocarpon earlianum, seperti\n  yang mengandung bahan aktif captan atau\n  thiophanate-methyl.\n\n- Manajemen Irigasi: Menghindari irigasi melalui\n  percikan yang dapat meningkatkan\n  kelembaban daun dan menyebarkan spora\n  jamur.\n\n- Pemangkasan dan Pemusnahan:\n  Pemangkasan daun yang terinfeksi dan\n  pemusnahan sisa-sisa tanaman setelah panen\n  untuk mengurangi sumber inokulum."
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

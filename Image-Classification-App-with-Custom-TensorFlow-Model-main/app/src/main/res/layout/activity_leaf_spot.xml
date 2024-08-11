@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeafSpot">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="700sp"
+                android:layout_height="380sp"
+                android:src="@drawable/leafspot"
+                android:paddingBottom="70sp"/>
+
+            <TextView
+                android:id="@+id/jdul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:text="LeafSpot"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="-48sp"/>
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jdul"
+                android:textColor="@color/pink"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:text="Mycosphaerella fragariae"
+                android:layout_centerHorizontal="true"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pen_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjelasan"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaf spot adalah penyakit yang disebabkan oleh jamur Mycosphaerella fragariae, yang dapat menginfeksi daun tanaman strawberry. Jamur ini berkembang biak di lingkungan yang lembab dan hangat, dan spora dapat menyebar melalui angin, air, atau kontak langsung dengan tanaman yang terinfeksi."
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pen_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanda-tanda Penyakit"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gejala awal leaf spot adalah munculnya bintik-bintik kecil berwarna ungu atau coklat pada daun. Bintik-bintik ini kemudian membesar dan memiliki pusat berwarna putih atau abu-abu dengan pinggiran berwarna gelap. Dalam kasus infeksi yang parah, daun dapat mengalami nekrosis pada area yang terinfeksi."
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gejala"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penanganan dan Pencegahan"
+                    android:textColor="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Penggunaan Fungisida: Aplikasi fungisida\n  yang sesuai, seperti yang berbahan aktif\n  tembaga atau mancozeb, dapat membantu\n  mengendalikan penyebaran penyakit\n\n- Sanitasi Kebun: Menghilangkan dan membakar\n  daun yang terinfeksi untuk mencegah\n  penyebaran spora.\n\n- Rotasi Tanaman: Menghindari penanaman\n  strawberry di tempat yang sama setiap tahun\n  untuk mengurangi inokulum penyakit."
+                    android:layout_marginTop="28sp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="8sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
